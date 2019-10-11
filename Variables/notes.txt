@@ -1,0 +1,2 @@
+Fri, Oct 11, 2019 2:03:10 PM: my first interactive note
+Fri, Oct 11, 2019 2:07:17 PM: The is the first interactive note with a prompt
