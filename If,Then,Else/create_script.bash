@@ -6,13 +6,17 @@ if [[ ! $1 ]];then
 fi
 
 filename="$1"
-if [[ -e $filename ]]; then
+if [[ -e "$filename" ]]; then
 	echo "File ${filename} already exists"
 	exit 1
 else
-	touch $filename
+	touch "$filename"
 	echo "${filename} created!"
+	chmod u+x "$filename"
+	echo "${filename} is now an executable script!"
+	string="echo hello "
+	echo $string >> "$filename"
 fi
 
 echo "End of code reached"
-exit 0
+exit 0 
